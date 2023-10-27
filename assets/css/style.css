@@ -1,0 +1,166 @@
+body, h1, h2, h3, p, button {
+    margin: 0;
+    padding: 0;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden;
+    }
+    .background-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/Challenge-6/images/challenge\ 6\ image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 20%;
+        z-index: -1;
+    }
+header {
+    display: flex;
+    color: white;
+    background-color: blue;
+    background-image: linear-gradient(to right, #2d2dc0, #9c2510);
+    padding: 0.5px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cityInput {
+    width: 25%;
+    display: block;
+    border-bottom: solid black 1px;
+    padding-top: 2.5%;
+    line-height: 2;
+}
+.cityInput input {
+    width: 96%;
+    height: 30px;
+    padding: 0% 0% 0% 2%;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.cityInput button {
+    width: 100%;
+    background-color: #93f673;
+    margin: 4% 8% 8% 0%;
+    padding: 2%;
+    border-radius: 5px;
+    opacity: .8;
+}
+.btn:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.history {
+    width: 25%;
+    padding-top: 1%;
+}
+.history button {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: #73d5f6;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.history button:hover {
+    opacity: 80%;
+}
+.currentStatus {
+    width: 66.6666%;
+    margin: 1% 0% 0% 2%;
+    padding: 1% 0% 0% 2%;
+    border: solid black 1px;
+    height: 160px;
+    line-height: 1.75;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.box {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    width: calc(20% - 10px);
+    box-sizing: border-box;
+}
+.fiveDayStatusContainer {
+    margin-top: 15px;
+    clear: both;
+    width: 70%;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+.forecastContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 75%; 
+    height: 40px;
+}
+.forecastContainer .box {
+    flex-basis: calc(20% - 20px);
+    font-size: small;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.boxes {
+    width: 90%;
+    margin: 10px 0px 0px 20px;
+    padding: 5px;
+    display: flex;
+  }
+  .day1, .day2, .day3, .day4, .day5 {
+    margin: 4px;
+    font-size: 13px;
+    height: 225px;
+    width: 25%;
+    padding: 5px;
+  }
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background-color: #7c7979;
+    color: white;
+    overflow: hidden;
+    font-size: larger;
+    }
+.message-container {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    white-space: nowrap;
+    animation: moveBanner 10s linear infinite;
+    display: flex;
+    align-items: center;
+}
+.message {
+    padding: 15px;
+}
+@keyframes moveBanner {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 2000px));
+    }
+}

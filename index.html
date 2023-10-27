@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="w3-container w3-teal">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <section class="w3-row w3-panel">
+        <section id="Button" class="w3-col m3">
+            <h2 class="w3-container">Search for a City</h2>
+            <input id="searchCityInput" class="w3-input w3-border" placeholder="Enter city name">
+            <button class="w3-button w3-blue w3-margin-top" id="searchCityButton">Search</button>
+            <ul id="cityList" class="w3-ul w3-margin-top"></ul>
+        </section>
+        <section class="w3-col m8 w3-card w3-padding w3-margin">
+            <h2 id="searchCityDisplay"></h2>
+            <div class="w3-row">
+                <div class="w3-col m6">
+                    <img id="img1" src="" alt="">
+                </div>
+                <div class="w3-col m6">
+                    <p id="temp1" class="w3-large">Temperature:</p>
+                    <p id="wind1">Wind:</p> 
+                    <p id="humidity1">Humidity:</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="w3-row w3-padding">
+        <h3 id="h3">5-day Forecast:</h3>
+        <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin forecast-card">
+            <h3 id="date2" class="w3-center">Date</h3>
+            <img id="img2" src="" alt="">
+            <p id="temp2" class="w3-center">Temperature:</p>
+            <p id="wind2" class="w3-center">Wind:</p>
+            <p id="humidity2" class="w3-center">Humidity:</p>
+        </article>
+        <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin forecast-card">
+            <h3 id="date3" class="w3-center">Date</h3>
+            <img id="img3" src="" alt="">
+            <p id="temp3" class="w3-center">Temperature:</p>
+            <p id="wind3" class="w3-center">Wind:</p>
+            <p id="humidity3" class="w3-center">Humidity:</p>
+        </article>
+        <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin forecast-card">
+            <h3 id="date4" class="w3-center">Date</h3>
+            <img id="img4" src="" alt="">
+            <p id="temp4" class="w3-center">Temperature:</p>
+            <p id="wind4" class="w3-center">Wind:</p>
+            <p id="humidity4" class="w3-center">Humidity:</p>
+        </article>
+        <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin forecast-card">
+            <h3 id="date5" class="w3-center">Date</h3>
+            <img id="img5" src="" alt="">
+            <p id="temp5" class="w3-center">Temperature:</p>
+            <p id="wind5" class="w3-center">Wind:</p>
+            <p id="humidity5" class="w3-center">Humidity:</p>
+        </article>
+        <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin forecast-card">
+            <h3 id="date6" class="w3-center">Date</h3>
+            <img id="img6" src="" alt="">
+            <p id="temp6" class="w3-center">Temperature:</p>
+            <p id="wind6" class="w3-center">Wind:</p>
+            <p id="humidity6" class="w3-center">Humidity:</p>
+        </article>
+    </section>
+    <script src="assets/Js/script.js"></script>
+</body>
+
+</html>
